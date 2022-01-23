@@ -1,0 +1,121 @@
+/*全体構造*/
+body {
+    margin: 0;
+    line-height: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+/*ヘッダー部実装*/
+header{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(7, 81, 131, 0.8);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}  
+
+  .header-left {
+    float: left;  
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: seashell;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 10px;
+  }
+  /*メイン部実装*/
+  .top-wrapper {
+    background-image:url(images/header-background.jpeg);  
+    background-size: cover;
+    padding: 180px 0 100px 0;
+    color: rgb(253, 242, 235);
+    position: relative;
+    height: 400px;
+  }
+
+  .top-wrapper::before{
+    background-color:rgba(0,0,0,0.4);
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    content:' ';
+  }
+  
+  .container{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform:translateY(-50%)translateX(-50%);
+    transform:translateY(-50%)translateX(-50%);
+  } 
+
+  .container h1{
+    font-size: 45px;
+    letter-spacing: 5px;
+    padding-bottom: 30px;
+  }
+
+  .container p{
+    padding-bottom: 25px;
+  }
+
+  .item-wrapper{
+    height: 2000px;
+    padding-bottom: 80px;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+
+  .item-header {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: #5f5d60;
+    text-align: center;
+    border-bottom:1px solid #eee;
+  }
+  
+  .item-header h2 {
+    font-weight: normal;
+    font-size: 30px;
+  }
+
+.item-image img{
+  width: 500px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.item-wrapper{
+display: flex;
+flex-wrap: wrap;
+margin: 20px 20px;
+}
+
+.item{
+  width: 50%;
+}
+
+.item p{
+  width: 100%;
+  display: inline-block;
+  margin-top: 20px;
+  color: #9a949c;
+  font-size: 15px;
+}
+
+footer div{
+  width: 125px;
+}
+
+footer p{
+  font-size: 15px;
+}
+
+footer{
+  padding-top: 30px;
+  float: right;
+}
